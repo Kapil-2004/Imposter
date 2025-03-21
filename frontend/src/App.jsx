@@ -10,12 +10,14 @@ import Signup from "./pages/Signup";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 export default function App() {
   return (
     <div className=" dark:bg-background-dark overflow-hidden     bg-background">
       <BrowserRouter>
       
+      <Header />
 
         <Routes>
           
@@ -34,7 +36,7 @@ export default function App() {
         
          
         </Routes>
-        
+
         <Footer/>
        
       </BrowserRouter>
