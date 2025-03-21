@@ -11,6 +11,8 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Resetpassword from "./pages/Resetpassword";
+
 
 export default function App() {
   return (
@@ -32,8 +34,9 @@ export default function App() {
           <Route path="/about" element={<About />}></Route>
 
           <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/reset-password/:token" element={<Resetpassword/>}></Route>
           
-        
+         
          
         </Routes>
 
