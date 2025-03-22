@@ -13,6 +13,8 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Resetpassword from "./pages/Resetpassword";
 import VerifyOTP from "./pages/VerifyOTP";
+import ProtectedRoute from "./components/ProtectedRoute";
+import CreatePost from "./pages/CreatePost";
 
 
 export default function App() {
@@ -39,6 +41,11 @@ export default function App() {
           <Route path="/reset-password/:token" element={<Resetpassword/>}></Route>
 
           <Route path="/verify-otp" element={<VerifyOTP />}></Route>
+
+          <Route path="/create-post" element={
+              <ProtectedRoute>
+                <CreatePost />
+              </ProtectedRoute> }></Route>
                    
          
         </Routes>
