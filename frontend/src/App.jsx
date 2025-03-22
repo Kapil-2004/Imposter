@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-
 import Signin from "./pages/Signin";
 import Home from "./pages/Home";
 import {Forgotpassword} from "./pages/Forgotpassword";
@@ -16,7 +15,7 @@ import VerifyOTP from "./pages/VerifyOTP";
 import ProtectedRoute from "./components/ProtectedRoute";
 import CreatePost from "./pages/CreatePost";
 import PostPage from "./pages/PostPage";
-
+import UserPost from "./pages/UserPost";
 
 export default function App() {
   return (
@@ -51,6 +50,14 @@ export default function App() {
 
           <Route path="/post/:postSlug" element={<PostPage />}></Route>
 
+          <Route
+            path="/posts/userposts"
+            element={
+              <ProtectedRoute>
+                <UserPost />
+              </ProtectedRoute>
+            }
+          ></Route>
                    
          
         </Routes>
