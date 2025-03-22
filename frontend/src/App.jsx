@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Signin from "./pages/Signin";
 import Home from "./pages/Home";
-import Forgotpassword from "./pages/Forgotpassword";
+import {Forgotpassword} from "./pages/Forgotpassword";
 import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
 import About from "./pages/About";
@@ -15,6 +15,7 @@ import Resetpassword from "./pages/Resetpassword";
 import VerifyOTP from "./pages/VerifyOTP";
 import ProtectedRoute from "./components/ProtectedRoute";
 import CreatePost from "./pages/CreatePost";
+import PostPage from "./pages/PostPage";
 
 
 export default function App() {
@@ -45,7 +46,11 @@ export default function App() {
           <Route path="/create-post" element={
               <ProtectedRoute>
                 <CreatePost />
-              </ProtectedRoute> }></Route>
+              </ProtectedRoute>
+            }></Route>
+
+          <Route path="/post/:postSlug" element={<PostPage />}></Route>
+
                    
          
         </Routes>
