@@ -13,7 +13,7 @@ const Footer = () => {
       }   border-t border-indigo-800 dark:bg-gray-600 dark:bg-opacity-30 flex items-center flex-col gap-2  justify-center px-2  bg-indigo-800     `}
     >
       <h1 className="text-gray-200 text-center text-sm font-medium">
-        Created by Mradul
+        Created by Kapil
       </h1>
       <div className="flex gap-2 text-lg text-gray-100">
         <a target="_blank" href="https://github.com/Mradul999">
