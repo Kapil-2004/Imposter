@@ -1,6 +1,6 @@
 import transporter from "../config/nodemailer.js";
 export const sendMail = async (email, type, token) => {
-  let subject, htmlContent;
+  let subject, htmlContent,text;
   switch (type) {
     case "otp":
       (subject = "Register  using this OTP"), (text = `Your OTP is ${token}`);
