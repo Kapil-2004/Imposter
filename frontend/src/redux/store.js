@@ -2,12 +2,14 @@
 
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
 import userReducer from "./user.slice.js";
+import themeReducer from "./theme.slice.js";
 
 import { persistReducer, persistStore } from "redux-persist";
 import storageSession from "redux-persist/lib/storage/session";
 
 const rootReducer = combineReducers({
   user: userReducer,
+  theme: themeReducer
   
 });
 
