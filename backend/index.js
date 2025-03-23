@@ -12,7 +12,7 @@ import feedbackRoute from "./routes/feedback.js";
 const app = express();
 
 const allowedOrigins = [ 
-  "http://localhost:5173" 
+  "http://localhost:5173","https://imposter-frontend.vercel.app/" 
 ];
 
 app.use(
