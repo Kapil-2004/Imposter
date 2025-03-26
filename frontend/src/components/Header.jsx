@@ -8,6 +8,7 @@ import axios from "axios";
 import { CiSun } from "react-icons/ci";
 import { FaMoon } from "react-icons/fa6";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { IoChatboxOutline } from "react-icons/io5";
 
 const API_URL = import.meta.env.VITE_API_URL;
 
@@ -71,6 +72,12 @@ export default function Header() {
 
       {/* Right Side */}
       <div className="flex items-center relative gap-3">
+      <NavLink to="/chat">
+          <div className="flex gap-1 items-center cursor-pointer font-medium ">
+            {" "}
+            <IoChatboxOutline /> ChatRoom
+          </div>
+        </NavLink>
         
 
         {/* Navigation Links */}
