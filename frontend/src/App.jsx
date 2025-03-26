@@ -58,6 +58,15 @@ export default function App() {
               </ProtectedRoute>
             }
           ></Route>
+
+          <Route
+            path="/chat"
+            element={
+              <ProtectedRoute>
+                <PublicChat />
+              </ProtectedRoute>
+            }
+          />
                    
          
         </Routes>
