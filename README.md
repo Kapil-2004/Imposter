@@ -30,3 +30,6 @@ Storage: Firebase (for image storage)
 APIs: Google Cloud Vision API, Perspective API
 
 WebSockets: Implemented with Socket.io for real-time communication in the public chat room
+
+## Live demo 
+ - https://college-anonymous.vercel.app/
