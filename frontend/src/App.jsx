@@ -16,6 +16,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import CreatePost from "./pages/CreatePost";
 import PostPage from "./pages/PostPage";
 import UserPost from "./pages/UserPost";
+import PublicChat from "./pages/PublicChat";
 
 export default function App() {
   return (
